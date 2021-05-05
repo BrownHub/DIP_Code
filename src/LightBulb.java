@@ -1,6 +1,6 @@
 
 
-public class LightBulb {
+public class LightBulb implements Switchable {
 
 	public void turnOn() {
         System.out.println("LightBulb: Bulb turned on...");

@@ -1,10 +1,10 @@
 
 public class ElectricPowerSwitch {
-    public LightBulb lightBulb;
+    public Switchable device;
     public boolean on;
 
-    public ElectricPowerSwitch(LightBulb lightBulb) {
-        this.lightBulb = lightBulb;
+    public ElectricPowerSwitch(Switchable device) {
+        this.device = device;
         this.on = false;
     }
     
@@ -15,10 +15,10 @@ public class ElectricPowerSwitch {
     public void press(){
         boolean checkOn = isOn();
         if (checkOn) {
-            lightBulb.turnOff();
+            device.turnOff();
             this.on = false;
         } else {
-            lightBulb.turnOn();
+            device.turnOn();
             this.on = true;
         }
     }

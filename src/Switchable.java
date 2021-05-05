@@ -1,7 +1,7 @@
 
 public interface Switchable {
 
-	public void turnON();
+	public void turnOn();
 	
 	public void turnOff();	
 	
